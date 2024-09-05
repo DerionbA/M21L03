@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .alert{
+
+            color: aqua;
+            background: blue;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="heading">welcome</h1>
+        <p>hello everyone</p>
+    </header>
+    <p>hi everyone have a gat day </p>
+    <strong>good job</strong>
+    <script>
+        let div = document.createElement("div")
+        div.id = "paragraph"
+        div.className = "alert"
+        div.innerHTML = "<p> dis is a div</p>"
+        document.body.append(div)
+
+        let heading = document.getElementById("heading");
+        heading.innerHTML = "red";
+        document.querySelector("header p").innerHTML = "<strong>good job</strong>"
+    </script>
+</body>
+</html>
